@@ -45,7 +45,7 @@ target_link_libraries(lqr_demo PRIVATE chhRobotics_CPP)
 # target_link_libraries(mpc_demo PRIVATE chhRobotics_CPP OsqpEigen::OsqpEigen)
 
 # # MPC实现轨迹跟踪，cppad/ipopt 实现
-# add_executable(mpc_speed_steel_demo Model_Predictive_Speed_Steel_Control/main.cpp Model_Predictive_Speed_Steel_Control/ModelPredictiveControl.cpp)
-# target_link_libraries(mpc_speed_steel_demo PRIVATE ipopt chhRobotics_CPP)
+add_executable(mpc_speed_steel_demo Model_Predictive_Speed_Steel_Control/main.cpp Model_Predictive_Speed_Steel_Control/ModelPredictiveControl.cpp)
+target_link_libraries(mpc_speed_steel_demo PRIVATE ipopt chhRobotics_CPP)
 
 
