@@ -10,8 +10,9 @@ set(PACKAGE_NAME chhRobotics_CPP)
 # Library target
 # add_library(chhRobotics_CPP INTERFACE)
 
-include_directories(/usr/include/python3.10)
-include_directories(/usr/local/lib/python3.10/dist-packages/numpy/core/include)
+#并没啥用
+# include_directories(/usr/include/python3.10)
+# include_directories(/usr/local/lib/python3.10/dist-packages/numpy/core/include)
 
 find_package(Eigen3 REQUIRED)
 include_directories(${EIGEN3_INCLUDE_DIR})
