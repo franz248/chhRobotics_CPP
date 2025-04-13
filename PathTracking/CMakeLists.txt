@@ -16,7 +16,7 @@ include_directories(/usr/local/lib/python3.10/dist-packages/numpy/core/include)
 find_package(Eigen3 REQUIRED)
 include_directories(${EIGEN3_INCLUDE_DIR})
 
-find_package(OsqpEigen REQUIRED)
+# find_package(OsqpEigen REQUIRED)
 
 #PID
 add_executable(pid_demo PID/main.cpp PID/PID_controller.cpp utils/KinematicModel.cpp)
@@ -39,12 +39,12 @@ target_link_libraries(rear_wheel_feedback_demo PRIVATE chhRobotics_CPP)
 add_executable(lqr_demo LQR/main.cpp  LQR/LQRControl.cpp utils/MyReferencePath.cpp utils/KinematicModel.cpp)
 target_link_libraries(lqr_demo PRIVATE chhRobotics_CPP)
 
-## mpc控制 osqp待实现
-add_executable(mpc_demo MPC/main.cpp  MPC/MPCControl.cpp utils/KinematicModel.cpp utils/MyReferencePath.cpp )
-target_link_libraries(mpc_demo PRIVATE chhRobotics_CPP OsqpEigen::OsqpEigen)
+# ## mpc控制 osqp待实现
+# add_executable(mpc_demo MPC/main.cpp  MPC/MPCControl.cpp utils/KinematicModel.cpp utils/MyReferencePath.cpp )
+# target_link_libraries(mpc_demo PRIVATE chhRobotics_CPP OsqpEigen::OsqpEigen)
 
-# MPC实现轨迹跟踪，cppad/ipopt 实现
-add_executable(mpc_speed_steel_demo Model_Predictive_Speed_Steel_Control/main.cpp Model_Predictive_Speed_Steel_Control/ModelPredictiveControl.cpp)
-target_link_libraries(mpc_speed_steel_demo PRIVATE ipopt chhRobotics_CPP)
+# # MPC实现轨迹跟踪，cppad/ipopt 实现
+# add_executable(mpc_speed_steel_demo Model_Predictive_Speed_Steel_Control/main.cpp Model_Predictive_Speed_Steel_Control/ModelPredictiveControl.cpp)
+# target_link_libraries(mpc_speed_steel_demo PRIVATE ipopt chhRobotics_CPP)
 
 

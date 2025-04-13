@@ -1,5 +1,6 @@
 #include <iostream>
-#include <eigen3/Eigen/Dense>    // Eigen头文件，<Eigen/Dense>包含Eigen库里面所有的函数和类
+#include<Eigen/Dense>
+// #include <eigen3/Eigen/Dense>    // Eigen头文件，<Eigen/Dense>包含Eigen库里面所有的函数和类
 #include<vector>
 #include<cmath>
 #include "matplotlibcpp.h"

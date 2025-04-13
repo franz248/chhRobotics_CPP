@@ -6,6 +6,7 @@
 #define CHHROBOTICS_CPP_LQRCONTROL_H
 
 #define EPS 1.0e-4
+// #include <eigen3/Eigen/Dense>
 #include <Eigen/Dense>
 #include <vector>
 #include <iostream>

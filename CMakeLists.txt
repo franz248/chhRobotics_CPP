@@ -39,7 +39,6 @@ add_executable(main main.cpp)
 target_link_libraries(main PRIVATE chhRobotics_CPP)
 
 
-add_subdirectory(PathTracking bin)
-
-add_subdirectory(PathPlanning bin_planning)
+add_subdirectory(PathTracking bin_pathtracking)
+add_subdirectory(PathPlanning bin_pathplanning)
 
